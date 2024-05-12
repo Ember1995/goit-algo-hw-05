@@ -200,7 +200,8 @@ rabin_karp_time_text2_existing = timeit.timeit(rabin_karp_search_in_text2_existi
 rabin_karp_time_text1_non_existing = timeit.timeit(rabin_karp_search_in_text1_non_existing, number=100)/100
 rabin_karp_time_text2_non_existing = timeit.timeit(rabin_karp_search_in_text2_non_existing, number=100)/100
 
-# Вивід результатів у табличному вигляді
+
+# Вивід усіх результатів тестування у табличному вигляді
 print(f"|{'Pattern':<20}|{'Area':<10}|{'kmp_search, sec':<20}|{'boyer_moore, sec':<20}|{'rabin_karp, sec':<20}|")
 print("|--------------------|----------|--------------------|--------------------|--------------------|")
 print(f"|{'Existing':<20}|{'text1':<10}|{kmp_time_text1_existing:<20.10f}|{boyer_time_text1_existing:<20.10f}|{rabin_karp_time_text1_existing:<20.10f}|")
